@@ -15,7 +15,7 @@ class Pokemon
     VALUES (?,?,?)
     SQL
     @db.execute(sql, self.name, self.type, self.db)
-    @id = @db.execute("SELECT last_insert_rowid()")
+    @id = @db.execute("SELECT last_insert_rowid() FROM pokeman")
   end
 
 end
