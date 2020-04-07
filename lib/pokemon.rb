@@ -14,7 +14,7 @@ class Pokemon
     INSERT INTO pokeman (name, type, db)
     VALUES (?,?,?)
     SQL
-    @db.execute(sql)
+    @db.execute(sql, self.name, self.type, self.db)
   end
 
 end
