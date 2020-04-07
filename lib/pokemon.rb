@@ -11,7 +11,8 @@ class Pokemon
   
   def self.save
     sql = <<-SQL
-    INSERT INTO
+    INSERT INTO pokeman (name, type, db)
+    VALUES (?,?,?)
     SQL
     @db.execute(sql)
   end
