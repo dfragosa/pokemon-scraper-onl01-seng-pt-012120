@@ -15,6 +15,7 @@ class Pokemon
     VALUES (?,?,?)
     SQL
     @db.execute(sql, self.name, self.type, self.db)
+    @id = @db.execute
   end
 
 end
