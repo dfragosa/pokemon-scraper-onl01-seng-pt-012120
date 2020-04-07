@@ -10,7 +10,10 @@ class Pokemon
   end
   
   def self.save
-       
+    sql = <<-SQL
+    INSERT INTO
+    SQL
+    @db.execute(sql)
   end
 
 end
